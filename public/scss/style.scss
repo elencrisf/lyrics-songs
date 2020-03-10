@@ -1,0 +1,100 @@
+.container-fluid {
+	min-height: 100vh;
+	background: linear-gradient(75deg, rgba(119, 205, 155, 0.82), rgba(69, 24, 115, 0.53));
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+}
+.row {
+    margin-bottom: 50px;
+}
+
+form#lyrics_form {
+    width: 40%;
+    
+}
+div.form-group.col-md-6 {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+input {
+    font-size: 18px;
+    height: 40px; 
+    box-shadow:inset 0 -0.6em 0 -0.45em rgba(0,0,0,0.17);
+    &:hover {
+        background-color: rgb(207, 207, 207);
+    }
+}
+
+#lyrics_search, #songs_search {
+    padding-left: 20%;
+}
+
+// #lyrics, #allSongs {
+//     padding-left: 250px;
+    
+// }
+
+
+button.btn.btn-primary.mt-4 {
+    background-color: rgb(72, 134, 134);
+    color: lightcyan;
+    position: relative;
+    margin-left: 40%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:inset 0 -0.6em 0 -0.45em rgba(0,0,0,0.17);
+    border: none;
+}
+
+button.btn.btn-primary.mt-4:hover {
+    background-color: rgb(212, 194, 221);
+    color: rgb(70, 70, 131);
+
+}
+
+
+  
+button.btn.btn-primary.mt-4:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+  
+button.btn.btn-primary.mt-4:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+#lyrics_search h3, #songs_search h3 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+    
+}
+
+
